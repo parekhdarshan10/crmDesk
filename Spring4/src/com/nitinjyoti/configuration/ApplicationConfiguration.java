@@ -20,9 +20,9 @@ public class ApplicationConfiguration extends WebMvcConfigurerAdapter{
 	public BasicDataSource getDataSoure(){
 		BasicDataSource dataSource = new BasicDataSource();
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-		dataSource.setUrl("jdbc:mysql://localhost:3306/darshan");
-		dataSource.setUsername("root");
-		dataSource.setPassword("admin");
+		dataSource.setUrl("jdbc:mysql://localhost:3306/{database Name}");
+		dataSource.setUsername("{user name}");
+		dataSource.setPassword("{password}");
 		return dataSource;
 	}
 	
